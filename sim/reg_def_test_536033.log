@@ -1,0 +1,10 @@
+# vsim -sv_seed 536033 -debugDB -l reg_def_test_536033.log -voptargs="+acc" -assertdebug -c testbench -do " log -r /*;run -all;" "+reg_def_test" 
+# Start time: 19:12:25 on Apr 06,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Error (suppressible): (vopt-7063) ../tb/testbench.sv(192): Failed to find 'sel' in hierarchical name '/d_if/sel'.
+# ** Error (suppressible): (vopt-7063) ../tb/testbench.sv(192): Failed to find 'sel' in hierarchical name '/d_if/sel'.
+# Optimization failed
+# Error loading design
+# End time: 19:12:26 on Apr 06,2026, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0

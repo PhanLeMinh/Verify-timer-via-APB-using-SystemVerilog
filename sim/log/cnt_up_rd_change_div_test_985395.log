@@ -1,0 +1,65 @@
+# vsim -sv_seed 985395 -debugDB -l cnt_up_rd_change_div_test_985395.log -voptargs="+acc" -assertdebug -c testbench -do " log -r /*;run -all;" "+cnt_up_rd_change_div_test" 
+# Start time: 01:08:28 on Aug 16,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 10.6d_1 linux_x86_64 Apr 11 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.dut_if(fast)
+# Loading work.timer_pkg(fast)
+# Loading work.test_pkg(fast)
+# Loading work.testbench(fast)
+# Loading work.dut_if(fast)
+# Loading work.timer_top(fast)
+# Loading work.timer_register(fast)
+# Loading work.timer_clock_divisor(fast)
+# Loading work.timer_counter(fast)
+# Loading work.timer_interrupt(fast)
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+#  log -r /*
+# run -all
+# 0: [testbench] Run cnt_up_rd_change_div_test
+# 0: [environment] build
+# 110000: [stimulus] Sent packet to driver
+# 110000: [driver] Get packet from stimulus
+# 170000: [stimulus] Sent packet to driver
+# 170000: [driver] Get packet from stimulus
+# 170000: [assert] PADDR & PWDATA stable
+# 190000: [assert] apb_write_check PASSED assertion
+# 230000: [assert] PADDR & PWDATA stable
+# 250000: [assert] apb_write_check PASSED assertion
+# 480000: [test] Changing div to 1
+# 480000: [stimulus] Sent packet to driver
+# 480000: [driver] Get packet from stimulus
+# 530000: [stimulus] Sent packet to driver
+# 530000: [driver] Get packet from stimulus
+# 530000: [assert] PADDR & PWDATA stable
+# 550000: [assert] apb_write_check PASSED assertion
+# 590000: [assert] PADDR & PWDATA stable
+# 610000: [assert] apb_write_check PASSED assertion
+# 2570000: [stimulus] Sent packet to driver
+# 2570000: [driver] Get packet from stimulus
+# 2630000: [test] READ addr = 1, data = 1
+# 2630000: [TEST PASSED] Overflow triggered after div change
+# 2630000: [stimulus] Sent packet to driver
+# 2630000: [driver] Get packet from stimulus
+# 2630000: [assert] PADDR & PWDATA stable
+# 2690000: [soreboard] TEST PASSED
+# 2690000: [assert] PADDR & PWDATA stable
+# 2710000: [assert] apb_write_check PASSED assertion
+# 3690000: [base_test] End simulation
+# ** Note: $finish    : ../testcase/base_test.sv(47)
+#    Time: 3690 ns  Iteration: 0  Instance: /testbench
+# End time: 01:08:28 on Aug 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
